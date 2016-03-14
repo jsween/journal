@@ -1,6 +1,9 @@
 var writeEntry = require('./write-entry.js').writeEntry;
+var prompt = require('prompt');
+prompt.start();
 
-var result = writeEntry('Dear Diary.... blah blah blah');
-result.forEach(function(element) {
-  console.log(element);
+prompt.get('entry', function(err, result) {
+  var result = writeEntry(result.entry);
+
+    console.log(result);
 });
