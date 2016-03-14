@@ -1,3 +1,3 @@
 exports.writeEntry = function(input) {
-  return input + '!!!!';
+  return input + ' Yours Truly';
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Journal</title>
@@ -12,12 +12,17 @@
     <h3>Hello this is my journal</h3>
     <div class="row">
       <div class="entry col-xs-8" id="entries">
+        <h5 id="Entrydate"></h5>
 
       </div>
       <div class="col-xs-4">
         <form id="form" action="index.html" method="post">
-          <label for="input">Your Entry:</label>
+          <!-- <input id="date" type="date" name="date" hidden> -->
+          <label for="title">Entry Title:</label>
+          <input id="title" name="name" value="">
+          <br>
           <textarea id="input" name="input" rows="8" cols="40" placeholder="Dear Diary,"></textarea>
+          <br>
           <button type="submit">Submit</button>
         </form>
       </div>
